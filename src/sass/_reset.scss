@@ -1,0 +1,33 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a,
+a:active,
+a:hover,
+a:visited,
+a:link {
+  text-decoration: none;
+}
+
+a::before,
+a::after {
+  content: '';
+  display: block;
+  position: absolute;
+}
