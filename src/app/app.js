@@ -33,7 +33,7 @@ tl.to('.navbar', {
   duration: 1,
   top: '0%',
   ease: 'power1.inOut',
-  background: '#101010',
+  background: '#2e0343',
   height: '100vh',
   display: 'block',
   // delay: 0.5,

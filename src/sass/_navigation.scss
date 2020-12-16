@@ -9,6 +9,7 @@
     top: 10px;
     left: 10px;
     padding: 3vh 4vw;
+    color: $offWhite;
     // font-weight: 500;
   }
   .toggle-btn {
@@ -26,13 +27,13 @@
     position: absolute;
     width: 40px;
     height: 2px;
-    background: $purple;
+    background: $offWhite;
   }
   span.two {
     position: absolute;
     width: 40px;
     height: 2px;
-    background: $purple;
+    background: $offWhite;
     margin-top: 12px;
   }
 
@@ -57,12 +58,10 @@
     &__link {
       font-size: 4.2rem;
       margin-bottom: 3rem;
-      color: #fff;
       opacity: 0;
-
-      a {
-        color: white;
-      }
+    }
+    a {
+      color: $offWhite;
     }
   }
 }
@@ -88,11 +87,10 @@
     &__link {
       font-size: 4.2rem;
       margin-bottom: 3rem;
-      color: #fff;
       opacity: 0;
 
       a {
-        color: white;
+        color: $offWhite;
       }
     }
   }
@@ -105,6 +103,15 @@
   }
   .toggle-btn {
     display: none;
+  }
+  .linkedInLink {
+    position: fixed;
+    padding: 3vh 4vw;
+    top: 24px;
+    right: 10px;
+    z-index: 5;
+    cursor: pointer;
+    font-size: 6rem;
   }
 
   .navbar {
@@ -134,7 +141,7 @@
       padding: 0 2.5rem;
 
       a {
-        color: #101010;
+        color: $offWhite;
         opacity: 1;
       }
     }

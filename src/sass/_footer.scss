@@ -1,6 +1,9 @@
 @import './variables';
 
 @media (min-width: 320px) {
+  #footer2 {
+    display: none;
+  }
   .footer {
     position: fixed;
     bottom: 0;
@@ -19,20 +22,48 @@
     }
   }
   a {
-    color: $black;
+    color: $offWhite;
   }
 }
 
 @media (min-width: 768px) {
   .footer {
     padding: 5.55vh 4vw;
+    &__links {
+      font-size: 5rem;
+    }
   }
 }
 
 @media (min-width: 1024px) {
+  #footer1 {
+    display: none;
+  }
   .footer {
     &__links {
       font-size: 6rem;
+    }
+  }
+
+  #footer2 {
+    display: block;
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 3vh 4vw;
+      z-index: 100;
+
+      &__nav {
+        display: flex;
+        padding: 0 10px;
+        justify-content: space-between;
+      }
+
+      &__links {
+        font-size: 2.5rem;
+        color: $offWhite;
+      }
     }
   }
 }
