@@ -92,23 +92,3 @@ tl1
     '-=2'
   )
   .from('.scrolldown', { opacity: 0, y: 100, duration: 1 });
-// .to(
-//   left,
-//   {
-//     duration: 1.6,
-//     delay: 0.6,
-//     width: '70%',
-//     ease: 'power2.out',
-//   },
-//   '-=2'
-// )
-// .to(
-//   right,
-//   {
-//     duration: 1.6,
-//     delay: 0.6,
-//     width: '30%',
-//     ease: 'power2.out',
-//   },
-//   '-=2'
-// );
