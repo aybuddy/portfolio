@@ -2,17 +2,15 @@
 import { gsap } from 'gsap';
 // gsap.registerPlugin(ScrollTrigger, CSSRulePlugin);
 
-// document.querySelector('header')
+const navbarLinks = document.querySelector('.navbar__link');
 
 const tl = gsap.timeline({
-  // onComplete: function () {
-  //   tl.reverse();
-  // },
   onReverseComplete: function () {
     gsap.set('.navbar, .navbar__link', {
       clearProps: 'all',
     });
   },
+  paused: true,
 });
 
 tl.to('.one', {
@@ -40,19 +38,21 @@ tl.to('.navbar', {
   display: 'block',
   // delay: 0.5,
 });
-tl.from('.navbar__link', {
-  duration: 0.8,
-  stagger: 0.3,
-  x: -200,
-  opacity: 0,
-  ease: 'power1.out',
-  clearProps: 'all',
-});
+tl.fromTo(
+  '.navbar__link',
+  { x: -400, opacity: 0 },
+  {
+    duration: 0.8,
+    stagger: 0.3,
+    x: 0,
+    opacity: 1,
+    ease: 'power1.out',
+  }
+);
 tl.reverse();
-// gsap.set('.navbar__link', { clearProps: 'all' });
 
-const header = document.querySelector('header');
-const navbarUL = document.querySelector('.navbar__links');
+// const header = document.querySelector('header');
+// const navbarUL = document.querySelector('.navbar__links');
 
 const toggleBtn = document.querySelector('.toggle-btn');
 toggleBtn.addEventListener('click', function () {

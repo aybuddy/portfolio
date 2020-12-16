@@ -1,8 +1,11 @@
+@import './variables';
+
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   padding: 15px 10px;
+  z-index: 100;
 }
 
 footer ul {
@@ -16,5 +19,5 @@ footer ul li {
 }
 
 footer ul li a {
-  color: purple;
+  color: $black;
 }
