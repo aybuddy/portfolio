@@ -1,23 +1,38 @@
 @import './variables';
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 15px 10px;
-  z-index: 100;
+@media (min-width: 320px) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 3vh 4vw;
+    z-index: 100;
+
+    &__nav {
+      display: flex;
+      padding: 0 10px;
+      justify-content: space-between;
+    }
+
+    &__links {
+      font-size: 4rem;
+    }
+  }
+  a {
+    color: $black;
+  }
 }
 
-footer ul {
-  display: flex;
-  padding: 0 10px;
-  justify-content: space-between;
+@media (min-width: 768px) {
+  .footer {
+    padding: 5.55vh 4vw;
+  }
 }
 
-footer ul li {
-  font-size: 4rem;
-}
-
-footer ul li a {
-  color: $black;
+@media (min-width: 1024px) {
+  .footer {
+    &__links {
+      font-size: 6rem;
+    }
+  }
 }

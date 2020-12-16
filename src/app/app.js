@@ -38,17 +38,24 @@ tl.to('.navbar', {
   display: 'block',
   // delay: 0.5,
 });
-tl.fromTo(
-  '.navbar__link',
-  { x: -400, opacity: 0 },
-  {
-    duration: 0.8,
-    stagger: 0.3,
-    x: 0,
-    opacity: 1,
-    ease: 'power1.out',
-  }
-);
+// tl.fromTo(
+//   '.navbar__link',
+//   { x: -400, opacity: 0 },
+//   {
+//     duration: 0.8,
+//     stagger: 0.3,
+//     x: 0,
+//     opacity: 1,
+//     ease: 'power1.out',
+//   }
+// );
+tl.to('.navbar__link', {
+  duration: 0.8,
+  stagger: 0.3,
+  x: 0,
+  opacity: 1,
+  ease: 'power1.out',
+});
 tl.reverse();
 
 // const header = document.querySelector('header');
