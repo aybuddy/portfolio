@@ -1,0 +1,20 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 10px;
+}
+
+footer ul {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+footer ul li {
+  font-size: 4rem;
+}
+
+footer ul li a {
+  color: purple;
+}
