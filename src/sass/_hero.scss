@@ -1,36 +1,37 @@
 @import './variables';
+@import './typography';
 
-@media (min-width: 320px) {
+@media (min-width: 280px) {
   #hero-section {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     height: 100vh;
     background-color: $black;
     position: relative;
+    width: 100vw;
+    padding: 2%;
   }
   .hero {
     &__container {
       display: flex;
       align-items: flex-end;
-      width: 70%;
-      height: 500px;
+      max-width: 88%;
+      height: 80vh;
       position: relative;
-      margin-left: auto;
-      top: 23%;
-      right: 50px;
+      margin: 0 auto;
+      top: 10%;
+      right: 0;
+      box-shadow: 15px 8px 18px -4px rgba(112, 112, 112, 0.151);
 
       background: url('../assets/images/encourline-DSYQJOH0GbU-unsplash.jpg')
         no-repeat;
       background-size: cover;
-      background-position: center center;
+      background-position: center;
 
       &::after {
         content: '';
         position: absolute;
         background-color: $darkPurple;
         width: 100%;
-        height: 500px;
+        height: 100%;
         opacity: 0.5;
         left: 0;
         top: 0;
@@ -38,37 +39,186 @@
     }
 
     &__text--main {
-      font-size: 180px;
+      font-size: 22vw;
       color: $offWhite;
       margin-bottom: 3rem;
       text-align: center;
     }
     &__text--second {
-      font-size: 80px;
+      position: absolute;
+      top: 40%;
+      left: 5%;
+      right: 5%;
+
+      font-size: 5rem;
+      text-align: center;
       color: $offWhite;
       z-index: 25;
-      padding: 0 0 4% 6%;
+      text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
     }
   }
   #glass {
-    width: 70%;
-    height: 23%;
-    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
     position: absolute;
-    border-radius: 30px;
-    backdrop-filter: blur(10px);
-    border: solid 2px transparent;
-    background-clip: padding-box;
-    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
     z-index: 15;
-    top: 30%;
-    left: 6%;
+    top: 18%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .mobile-only-list {
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    left: 0;
+    max-width: 90%;
+    margin: 0 auto;
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      & li {
+        color: $white;
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+      }
+    }
   }
 }
-@media (min-width: 768px) {
-}
-@media (min-width: 1024px) {
-}
+
+// @media (min-width: 768px) {
+//   .hero {
+//     &__container {
+//       display: flex;
+//       align-items: flex-end;
+//       width: 70%;
+//       height: 500px;
+//       position: relative;
+//       margin-left: auto;
+//       top: 23%;
+//       right: 50px;
+//       box-shadow: 15px 8px 18px 4px rgba(112, 112, 112, 0.151);
+
+//       background: url('../assets/images/encourline-DSYQJOH0GbU-unsplash.jpg')
+//         no-repeat;
+//       background-size: cover;
+//       background-position: center center;
+
+//       &::after {
+//         content: '';
+//         position: absolute;
+//         background-color: $darkPurple;
+//         width: 100%;
+//         height: 500px;
+//         opacity: 0.5;
+//         left: 0;
+//         top: 0;
+//       }
+//     }
+
+//     &__text--main {
+//       font-size: 180px;
+//       color: $offWhite;
+//       margin-bottom: 3rem;
+//       text-align: center;
+//     }
+//     &__text--second {
+//       font-size: 80px;
+//       color: $offWhite;
+//       z-index: 25;
+//       padding: 0 0 4% 6%;
+//       text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
+//     }
+//   }
+//   #glass {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 70%;
+//     height: 23%;
+//     background-color: rgba(255, 255, 255, 0.2);
+//     position: absolute;
+//     border-radius: 30px;
+//     backdrop-filter: blur(10px);
+//     border: solid 2px transparent;
+//     background-clip: padding-box;
+//     box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+//     z-index: 15;
+//     top: 34%;
+//     left: 6%;
+//   }
+// }
+
+// @media (min-width: 1024px) {
+//   .hero {
+//     &__container {
+//       display: flex;
+//       align-items: flex-end;
+//       width: 70%;
+//       height: 500px;
+//       position: relative;
+//       margin-left: auto;
+//       top: 23%;
+//       right: 50px;
+//       box-shadow: 15px 8px 18px 4px rgba(112, 112, 112, 0.151);
+
+//       background: url('../assets/images/encourline-DSYQJOH0GbU-unsplash.jpg')
+//         no-repeat;
+//       background-size: cover;
+//       background-position: center center;
+
+//       &::after {
+//         content: '';
+//         position: absolute;
+//         background-color: $darkPurple;
+//         width: 100%;
+//         height: 500px;
+//         opacity: 0.5;
+//         left: 0;
+//         top: 0;
+//       }
+//     }
+
+//     &__text--main {
+//       font-size: 180px;
+//       color: $offWhite;
+//       margin-bottom: 3rem;
+//       text-align: center;
+//     }
+//     &__text--second {
+//       font-size: 80px;
+//       color: $offWhite;
+//       z-index: 25;
+//       padding: 0 0 4% 6%;
+//       text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
+//     }
+//   }
+//   #glass {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 70%;
+//     height: 23%;
+//     background-color: rgba(255, 255, 255, 0.2);
+//     position: absolute;
+//     border-radius: 30px;
+//     backdrop-filter: blur(10px);
+//     border: solid 2px transparent;
+//     background-clip: padding-box;
+//     box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+//     z-index: 15;
+//     top: 34%;
+//     left: 6%;
+//   }
+// }
 
 // .background-slider {
 //   position: absolute;

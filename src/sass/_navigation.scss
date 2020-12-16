@@ -64,6 +64,9 @@
       color: $offWhite;
     }
   }
+  .linkedInLink {
+    display: none;
+  }
 }
 
 // @media (min-width: 426px) and (max-width: 768px) {}
@@ -100,6 +103,7 @@
   .logo {
     font-size: 5rem;
     padding: 5.55vh 4vw;
+    text-shadow: 5px 9px 9px rgba(204, 204, 204, 0.3);
   }
   .toggle-btn {
     display: none;
@@ -143,6 +147,7 @@
       a {
         color: $offWhite;
         opacity: 1;
+        text-shadow: 5px 9px 9px rgba(204, 204, 204, 0.3);
       }
     }
   }
