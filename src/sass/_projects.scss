@@ -3,93 +3,118 @@
   background-color: $black;
 }
 
-// .project {
-//   display: flex;
-//   height: 100%;
-//   // justify-content: center;
-//   // align-items: center;
-//   &__left {
-//     height: 100%;
-//     width: 50%;
-//     background-color: pink;
-//     position: relative;
-//   }
-//   &__right {
-//     height: 100%;
-//     width: 50%;
-//     background-color: purple;
-//     position: relative;
-//     // z-index: -1;
+.project {
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
 
-//     display: flex;
-//     height: 100%;
-//     justify-content: center;
-//     align-items: center;
-//   }
+  &__left {
+    height: 100%;
+    width: 50%;
+    // background-color: #1a0a1d;
+    background-color: #1f082c;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+  }
 
-//   &__image {
-//     width: 550px;
-//     height: 300px;
-//     position: absolute;
-//     top: 42%;
-//     left: 40%;
-//     z-index: 1;
-//   }
+  &__right {
+    height: 100%;
+    width: 50%;
+    background-color: #23082e;
+    position: relative;
+    // z-index: -1;
 
-//   &__heading--container {
-//     position: absolute;
-//     z-index: 2;
-//     width: 500px;
-//     top: 40%;
-//     left: 18%;
-//     padding: 25px;
-//   }
-//   &__heading--main {
-//     font-size: 48px;
-//     color: white;
-//     margin-bottom: 25px;
-//   }
-//   &__heading--desc {
-//     font-size: 32px;
-//     color: white;
-//   }
-// }
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
-// .btn {
-//   position: absolute;
-//   display: flex;
-//   align-self: center;
-//   font-size: 1.6rem;
-//   letter-spacing: 2px;
-//   line-height: 1;
-//   text-transform: uppercase;
-//   text-align: center;
-//   padding: 1.4rem 4rem;
-//   border-radius: 10rem;
-//   cursor: pointer;
-//   box-shadow: 12px 10px 18px -6px rgba(0, 0, 0, 0.14);
+  &__image {
+    width: 550px;
+    height: 300px;
+    // position: absolute;
+    // top: 42%;
+    // left: 40%;
+    z-index: 1;
+  }
 
-//   &:hover {
-//     animation-name: moveDown;
-//     animation-duration: 3s;
-//   }
+  &__heading--container {
+    // position: absolute;
+    z-index: 2;
+    width: 500px;
+    // top: 40%;
+    // left: 18%;
+    padding: 25px;
+  }
+  &__heading--main {
+    font-family: $serif;
+    font-weight: 400;
+    font-size: $h2;
+    color: $offWhite;
+    margin-bottom: 25px;
+  }
+  &__heading--desc {
+    font-size: $h3;
+    color: $offWhite;
+    font-family: $sanSerif;
+    font-weight: 400;
+  }
+  .glass_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 604px;
+    height: 23%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  }
+}
 
-//   &--main {
-//     position: absolute;
-//     padding: 1.4rem 5rem;
-//     background-color: black;
-//     color: white;
-//     border: 1px solid black;
-//     bottom: 15%;
-//     left: 57%;
-//   }
-//   &--second {
-//     position: absolute;
-//     color: black;
-//     background-color: white;
-//     border: 1px solid black;
-//     bottom: 15%;
-//     left: 81%;
-//     z-index: 4;
-//   }
-// }
+.btn {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.4rem 4rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  box-shadow: 12px 10px 18px -6px rgba(0, 0, 0, 0.14);
+
+  &:hover {
+    animation-name: moveDown;
+    animation-duration: 3s;
+  }
+
+  &--main {
+    position: absolute;
+    padding: 1.4rem 5rem;
+    background-color: $darkPurple;
+    color: white;
+    border: 1px solid $darkPurple;
+    bottom: 15%;
+    left: 57%;
+  }
+  &--second {
+    position: absolute;
+    color: $darkPurple;
+    background-color: white;
+    border: 1px solid $darkPurple;
+    bottom: 15%;
+    left: 81%;
+    z-index: 4;
+  }
+}
