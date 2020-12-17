@@ -11,16 +11,14 @@
   }
   .hero {
     &__container {
-      display: flex;
-      align-items: flex-end;
-      max-width: 88%;
-      height: 80vh;
       position: relative;
-      margin: 0 auto;
       top: 10%;
       right: 0;
+      display: flex;
+      max-width: 88%;
+      height: 80vh;
+      margin: 0 auto;
       box-shadow: 15px 8px 18px -4px rgba(112, 112, 112, 0.151);
-
       background: url('../assets/images/encourline-DSYQJOH0GbU-unsplash.jpg')
         no-repeat;
       background-size: cover;
@@ -43,14 +41,14 @@
       color: $offWhite;
       margin-bottom: 3rem;
       text-align: center;
+      text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
     }
     &__text--second {
       position: absolute;
-      top: 40%;
+      top: 37%;
       left: 5%;
       right: 5%;
-
-      font-size: 5rem;
+      font-size: 12vw;
       text-align: center;
       color: $offWhite;
       z-index: 25;
@@ -58,21 +56,21 @@
     }
   }
   #glass {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 90%;
-    position: absolute;
     z-index: 15;
-    top: 18%;
-    left: 0;
-    right: 0;
     margin: 0 auto;
   }
 
   .mobile-only-list {
     position: absolute;
-    bottom: 15%;
+    bottom: 12%;
     right: 0;
     left: 0;
     max-width: 90%;
@@ -89,144 +87,125 @@
         color: $white;
         font-size: 3.2rem;
         margin-bottom: 2rem;
+        text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
       }
     }
   }
 }
 
-@media (min-width: 768px) {
-  #hero-section {
-    height: 100vh;
-    background-color: $black;
-    position: relative;
-    width: 100vw;
-    padding: 2%;
-  }
+@media (min-width: 500px) {
   .hero {
-    &__container {
-      display: flex;
-      align-items: flex-end;
-      width: 70%;
-      height: 500px;
-      position: relative;
-      margin-left: auto;
-      top: 23%;
-      right: 50px;
-      box-shadow: 15px 8px 18px 4px rgba(112, 112, 112, 0.151);
-
-      background: url('../assets/images/encourline-DSYQJOH0GbU-unsplash.jpg')
-        no-repeat;
-      background-size: cover;
-      background-position: center center;
-
-      &::after {
-        content: '';
-        position: absolute;
-        background-color: $darkPurple;
-        width: 100%;
-        height: 500px;
-        opacity: 0.5;
-        left: 0;
-        top: 0;
-      }
-    }
-
     &__text--main {
-      font-size: 180px;
-      color: $offWhite;
-      margin-bottom: 3rem;
-      text-align: center;
+      font-size: 18vw;
     }
     &__text--second {
-      font-size: 80px;
-      color: $offWhite;
-      z-index: 25;
-      padding: 0 0 4% 6%;
-      text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
+      font-size: 9vw;
+      top: 35%;
     }
   }
   #glass {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
+    top: 18%;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero {
+    &__container {
+      position: relative;
+      top: 14%;
+      right: 4%;
+      width: 70%;
+      height: 60vh;
+      margin: 0 0 0 auto;
+    }
+
+    &__text--main {
+      font-size: 136px;
+    }
+    &__text--second {
+      top: 58%;
+      left: -30%;
+      right: 0;
+      font-size: 54px;
+      margin: 0 auto;
+    }
+  }
+  #glass {
+    top: 22%;
+    left: -12%;
+    max-width: 604px;
     height: 23%;
     background-color: rgba(255, 255, 255, 0.2);
-    position: absolute;
     border-radius: 30px;
     backdrop-filter: blur(10px);
     border: solid 2px transparent;
     background-clip: padding-box;
     box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
-    z-index: 15;
-    top: 34%;
-    left: 6%;
   }
 }
 
-// @media (min-width: 1024px) {
-//   .hero {
-//     &__container {
-//       display: flex;
-//       align-items: flex-end;
-//       width: 70%;
-//       height: 500px;
-//       position: relative;
-//       margin-left: auto;
-//       top: 23%;
-//       right: 50px;
-//       box-shadow: 15px 8px 18px 4px rgba(112, 112, 112, 0.151);
+@media (min-width: 1024px) {
+  .mobile-only-list {
+    display: none;
+  }
+  .hero {
+    &__container {
+      align-items: flex-end;
+      top: 16%;
+      right: 12%;
+      width: 65vw;
+      height: 69vh;
+    }
 
-//       background: url('../assets/images/encourline-DSYQJOH0GbU-unsplash.jpg')
-//         no-repeat;
-//       background-size: cover;
-//       background-position: center center;
+    &__text--main {
+      font-size: 180px;
+    }
+    &__text--second {
+      font-size: 70px;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0 5% 3% 5%;
+    }
 
-//       &::after {
-//         content: '';
-//         position: absolute;
-//         background-color: $darkPurple;
-//         width: 100%;
-//         height: 500px;
-//         opacity: 0.5;
-//         left: 0;
-//         top: 0;
-//       }
-//     }
+    &__social {
+      position: absolute;
+      top: 50%;
+      right: -215px;
+      transform: rotate(-90deg);
 
-//     &__text--main {
-//       font-size: 180px;
-//       color: $offWhite;
-//       margin-bottom: 3rem;
-//       text-align: center;
-//     }
-//     &__text--second {
-//       font-size: 80px;
-//       color: $offWhite;
-//       z-index: 25;
-//       padding: 0 0 4% 6%;
-//       text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
-//     }
-//   }
-//   #glass {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 70%;
-//     height: 23%;
-//     background-color: rgba(255, 255, 255, 0.2);
-//     position: absolute;
-//     border-radius: 30px;
-//     backdrop-filter: blur(10px);
-//     border: solid 2px transparent;
-//     background-clip: padding-box;
-//     box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
-//     z-index: 15;
-//     top: 34%;
-//     left: 6%;
-//   }
-// }
+      & ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
+      & li {
+        color: $offWhite;
+        margin-left: 100px;
+        font-size: 2.6rem;
+      }
+    }
+  }
+  #glass {
+    top: 32%;
+    left: 4%;
+    max-width: 900px;
+    height: 23%;
+
+    margin: 0 auto 0 0;
+  }
+}
+
+@media (min-width: 2560px) {
+  .hero {
+    &__social {
+      right: -150px;
+    }
+  }
+}
 // .background-slider {
 //   position: absolute;
 //   top: 0;
