@@ -3,14 +3,15 @@
     position: relative;
   }
   .logo {
-    font-size: 4rem;
+    font-family: $serif;
+    font-weight: 500;
+    font-size: $h2;
     z-index: 600;
     position: fixed;
     top: 10px;
     left: 10px;
     padding: 3vh 4vw;
     color: $offWhite;
-    // font-weight: 500;
   }
   .toggle-btn {
     position: fixed;
@@ -56,7 +57,9 @@
     }
 
     &__link {
-      font-size: 4.2rem;
+      font-family: $sanSerif;
+      font-weight: 400;
+      font-size: $h2;
       margin-bottom: 3rem;
       opacity: 0;
     }
@@ -69,11 +72,9 @@
   }
 }
 
-// @media (min-width: 426px) and (max-width: 768px) {}
-
 @media (min-width: 768px) {
   .logo {
-    font-size: 5rem;
+    font-size: $h2;
     padding: 5.55vh 4vw;
   }
 
@@ -88,7 +89,7 @@
       align-items: center;
     }
     &__link {
-      font-size: 4.2rem;
+      font-size: $h2;
       margin-bottom: 3rem;
       opacity: 0;
 
@@ -101,7 +102,7 @@
 
 @media (min-width: 1024px) {
   .logo {
-    font-size: 5rem;
+    font-size: $h2;
     padding: 5.55vh 4vw;
     text-shadow: 5px 9px 9px rgba(204, 204, 204, 0.3);
   }
@@ -129,7 +130,6 @@
 
     &__links {
       display: flex;
-      // justify-content: flex-end;
       justify-content: center;
       align-items: center;
       flex-direction: row;
@@ -138,13 +138,14 @@
     }
 
     &__link {
-      font-size: 3.2rem;
+      font-size: $h4;
       opacity: 1;
       margin-bottom: 0;
-      // padding-left: 5rem;
-      padding: 0 2.5rem;
+      padding: 0 4.8rem;
 
       a {
+        font-family: $sanSerif;
+        font-weight: 400;
         color: $offWhite;
         opacity: 1;
         text-shadow: 5px 9px 9px rgba(204, 204, 204, 0.3);
