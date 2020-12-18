@@ -33,7 +33,7 @@
     }
 
     span {
-      font-size: 26px;
+      font-size: $h4;
       color: $offWhite;
       position: relative;
       top: 80%;
@@ -69,7 +69,7 @@
     }
 
     span {
-      font-size: 26px;
+      font-size: $h4;
       color: $offWhite;
       position: relative;
       top: 80%;
@@ -103,7 +103,7 @@
     }
 
     span {
-      font-size: 26px;
+      font-size: $h4;
       color: $offWhite;
       position: relative;
       top: 80%;
@@ -137,7 +137,7 @@
     }
 
     span {
-      font-size: 26px;
+      font-size: $h4;
       color: $offWhite;
       position: relative;
       top: 80%;
@@ -203,7 +203,6 @@
     &__right {
       height: 100%;
       width: 100%;
-      // background-color: #23082e;
       position: relative;
       margin-bottom: 100px;
 
@@ -214,7 +213,6 @@
 
       &--container {
         width: 90%;
-        // margin: -10% 0 10% 0;
         margin: 10% 0;
       }
 
@@ -243,11 +241,6 @@
     box-shadow: 12px 10px 18px -6px rgba(0, 0, 0, 0.14);
     cursor: pointer;
 
-    &:hover {
-      animation-name: moveDown;
-      animation-duration: 3s;
-    }
-
     &--main {
       padding: 1rem 5rem;
       background-color: $darkPurple;
@@ -270,9 +263,6 @@
     margin: 3% 7% 0 auto;
 
     span {
-      font-size: 26px;
-      color: $offWhite;
-      position: relative;
       top: 88%;
       right: 20%;
     }
@@ -283,9 +273,6 @@
     margin: 3% 7% 0 auto;
 
     span {
-      font-size: 26px;
-      color: $offWhite;
-      position: relative;
       top: 88%;
       right: 20%;
     }
@@ -296,9 +283,6 @@
     margin: 3% 7% 0 auto;
 
     span {
-      font-size: 26px;
-      color: $offWhite;
-      position: relative;
       top: 88%;
       right: 20%;
     }
@@ -309,9 +293,6 @@
     margin: 3% 7% 0 auto;
 
     span {
-      font-size: 26px;
-      color: $offWhite;
-      position: relative;
       top: 88%;
       right: 20%;
     }
@@ -319,11 +300,8 @@
   .project {
     &__left {
       .glass_container {
-        position: absolute;
         top: 35px;
         left: 10%;
-        z-index: 50;
-        margin-left: 20px;
       }
     }
     &__right {
@@ -341,9 +319,6 @@
     margin: 3% 7% 0 auto;
 
     span {
-      font-size: 26px;
-      color: $offWhite;
-      position: relative;
       top: 90%;
       right: 13%;
     }
@@ -354,9 +329,6 @@
     margin: 3% 7% 0 auto;
 
     span {
-      font-size: 26px;
-      color: $offWhite;
-      position: relative;
       top: 90%;
       right: 13%;
     }
@@ -367,9 +339,6 @@
     margin: 3% 7% 0 auto;
 
     span {
-      font-size: 26px;
-      color: $offWhite;
-      position: relative;
       top: 90%;
       right: 13%;
     }
@@ -380,9 +349,6 @@
     margin: 3% 7% 0 auto;
 
     span {
-      font-size: 26px;
-      color: $offWhite;
-      position: relative;
       top: 90%;
       right: 13%;
     }
@@ -391,11 +357,8 @@
     height: 80vh;
     &__left {
       .glass_container {
-        position: absolute;
         top: 35px;
         left: 10%;
-        z-index: 50;
-        margin-left: 20px;
 
         display: flex;
         justify-content: center;
@@ -413,7 +376,6 @@
       }
 
       &--main {
-        color: $offWhite;
         font-weight: 500;
       }
     }
@@ -433,82 +395,33 @@
     width: 50%;
     height: 400px;
     margin: 3% 10% 0 auto;
-
-    span {
-      font-size: 26px;
-      color: $offWhite;
-      position: relative;
-      top: 90%;
-      right: 13%;
-    }
   }
   #project2BG {
     width: 50%;
     height: 400px;
     margin: 3% 10% 0 auto;
-
-    span {
-      font-size: 26px;
-      color: $offWhite;
-      position: relative;
-      top: 90%;
-      right: 13%;
-    }
   }
   #project3BG {
     width: 50%;
     height: 400px;
     margin: 3% 10% 0 auto;
-
-    span {
-      font-size: 26px;
-      color: $offWhite;
-      position: relative;
-      top: 90%;
-      right: 13%;
-    }
   }
   #project4BG {
     width: 50%;
     height: 400px;
     margin: 3% 10% 0 auto;
-
-    span {
-      font-size: 26px;
-      color: $offWhite;
-      position: relative;
-      top: 90%;
-      right: 13%;
-    }
   }
   .project {
     height: 80vh;
     &__left {
       .glass_container {
-        position: absolute;
         top: 45%;
         left: 10%;
-        z-index: 50;
-        margin-left: 20px;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
         max-width: 500px;
-        width: 100%;
-        height: 40%;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 30px;
-        backdrop-filter: blur(10px);
-        border: solid 2px transparent;
-        background-clip: padding-box;
-        box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
       }
 
       &--main {
-        color: $offWhite;
-        font-weight: 500;
         font-size: $h2;
       }
     }
@@ -526,23 +439,11 @@
     }
   }
   .btn {
-    &:hover {
-      animation-name: moveDown;
-      animation-duration: 3s;
-    }
-
     &--main {
-      padding: 1rem 5rem;
-      background-color: $darkPurple;
-      color: $offWhite;
-      border: 1px solid $darkPurple;
       margin: 0;
       margin-right: 25px;
     }
     &--second {
-      color: $darkPurple;
-      background-color: $offWhite;
-      border: 1px solid $darkPurple;
       margin-right: 18%;
     }
   }
@@ -551,12 +452,8 @@
 @media (min-width: 1440px) {
   .project {
     &__right {
-      flex-direction: row;
-      justify-content: flex-end;
       margin: 0;
       &--container {
-        margin: 75px 0 0 0;
-        width: 20%;
         position: absolute;
         top: -70px;
         left: 160px;
