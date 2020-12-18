@@ -1,6 +1,9 @@
 @import './variables';
 
 @media (min-width: 320px) {
+  #footer1 {
+    background-color: $black;
+  }
   #footer2 {
     display: none;
   }
@@ -8,7 +11,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 3vh 4vw;
+    padding: 2vh 4vw;
     z-index: 100;
 
     &__nav {

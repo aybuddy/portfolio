@@ -15,6 +15,7 @@
     top: 15%;
     position: relative;
     margin: 3% 4% 0 auto;
+    box-shadow: 15px 8px 18px -4px rgba(112, 112, 112, 0.2);
 
     &::before {
       content: '';
@@ -38,6 +39,7 @@
       position: relative;
       top: 80%;
       right: 30%;
+      text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
     }
   }
   #project2BG {
@@ -49,6 +51,7 @@
     top: 15%;
     position: relative;
     margin: 3% 4% 0 auto;
+    box-shadow: 15px 8px 18px -4px rgba(112, 112, 112, 0.2);
 
     &::before {
       content: '';
@@ -72,6 +75,7 @@
       position: relative;
       top: 80%;
       right: 30%;
+      text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
     }
   }
   #project3BG {
@@ -83,6 +87,7 @@
     top: 15%;
     position: relative;
     margin: 3% 4% 0 auto;
+    box-shadow: 15px 8px 18px -4px rgba(112, 112, 112, 0.2);
 
     &::before {
       content: '';
@@ -106,6 +111,7 @@
       position: relative;
       top: 80%;
       right: 30%;
+      text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
     }
   }
   #project4BG {
@@ -117,6 +123,7 @@
     top: 15%;
     position: relative;
     margin: 3% 4% 0 auto;
+    box-shadow: 15px 8px 18px -4px rgba(112, 112, 112, 0.2);
 
     &::before {
       content: '';
@@ -140,6 +147,7 @@
       position: relative;
       top: 80%;
       right: 30%;
+      text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
     }
   }
 
@@ -221,6 +229,7 @@
         font-family: $sanSerif;
         font-weight: 400;
         line-height: 150%;
+        text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
       }
     }
   }
@@ -245,11 +254,13 @@
       color: $offWhite;
       border: 1px solid $darkPurple;
       margin-bottom: 25px;
+      box-shadow: 15px 8px 18px -4px rgba(112, 112, 112, 0.151);
     }
     &--second {
       color: $darkPurple;
       background-color: $offWhite;
       border: 1px solid $darkPurple;
+      box-shadow: 15px 8px 18px -4px rgba(112, 112, 112, 0.151);
     }
   }
 }
@@ -434,6 +445,16 @@
         top: -70px;
         left: 130px;
       }
+
+      &--desc {
+        padding: 0 10px;
+        font-size: $h6;
+        color: $offWhite;
+        font-family: $sanSerif;
+        font-weight: 400;
+        line-height: 150%;
+        text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
+      }
     }
   }
   .btn {
@@ -449,6 +470,11 @@
 
 @media (min-width: 1440px) {
   .project {
+    &__left {
+      .glass_container {
+        left: 15%;
+      }
+    }
     &__right {
       margin: 0;
       &--container {
@@ -459,6 +485,168 @@
     }
   }
   .btn {
+    &--second {
+      margin-right: 22%;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .project-title {
+    font-size: 88px;
+    padding: 4rem 0;
+    width: 20%;
+  }
+  #project1BG {
+    height: 500px;
+
+    span {
+      font-size: $h2;
+      top: 90%;
+      right: 12%;
+    }
+  }
+  #project2BG {
+    height: 500px;
+
+    span {
+      font-size: $h2;
+      top: 90%;
+      right: 12%;
+    }
+  }
+  #project3BG {
+    height: 500px;
+
+    span {
+      font-size: $h2;
+      top: 90%;
+      right: 12%;
+    }
+  }
+  #project4BG {
+    height: 500px;
+
+    span {
+      font-size: $h2;
+      top: 90%;
+      right: 12%;
+    }
+  }
+  .project {
+    height: 100vh;
+    &__left {
+      .glass_container {
+        left: 9%;
+        max-width: 800px;
+        height: auto;
+        top: 33%;
+      }
+      &--main {
+        font-size: 96px;
+      }
+    }
+    &__right {
+      &--container {
+        position: absolute;
+        top: -70px;
+        left: 160px;
+      }
+      &--desc {
+        font-size: 24px;
+        position: relative;
+        top: 0;
+        left: 88px;
+      }
+    }
+  }
+  .btn {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-size: $h4;
+    &--main {
+      margin-right: 100px;
+    }
+    &--second {
+      margin-right: 22%;
+    }
+  }
+}
+
+@media (min-width: 2560px) {
+  .project-title {
+    font-size: 150px;
+    padding: 8rem 0;
+    width: 20%;
+  }
+  #project1BG {
+    height: 550px;
+
+    span {
+      font-size: $h2;
+      top: 90%;
+      right: 10%;
+    }
+  }
+  #project2BG {
+    height: 550px;
+
+    span {
+      font-size: $h2;
+      top: 90%;
+      right: 10%;
+    }
+  }
+  #project3BG {
+    height: 550px;
+
+    span {
+      font-size: $h2;
+      top: 90%;
+      right: 10%;
+    }
+  }
+  #project4BG {
+    height: 550px;
+
+    span {
+      font-size: $h2;
+      top: 90%;
+      right: 10%;
+    }
+  }
+  .project {
+    &__left {
+      .glass_container {
+        left: 14%;
+        max-width: 1000px;
+        height: auto;
+        top: 10%;
+      }
+      &--main {
+        font-size: 120px;
+      }
+    }
+    &__right {
+      margin: 0;
+      &--container {
+        position: absolute;
+        top: -70px;
+        left: 160px;
+      }
+      &--desc {
+        font-size: 32px;
+        position: relative;
+        top: -150px;
+        left: 200px;
+      }
+    }
+  }
+  .btn {
+    font-size: $h2;
+    &--main {
+      margin-right: 50px;
+    }
     &--second {
       margin-right: 22%;
     }
