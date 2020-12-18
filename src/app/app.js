@@ -61,6 +61,8 @@ tl.reverse();
 // const header = document.querySelector('header');
 // const navbarUL = document.querySelector('.navbar__links');
 
+// BUG Navbar does not hide after click
+
 const toggleBtn = document.querySelector('.toggle-btn');
 toggleBtn.addEventListener('click', function () {
   // navbarUL.style.display = 'flex';
