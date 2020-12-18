@@ -1,0 +1,14 @@
+@import './variables';
+@import './typography';
+
+#about-section {
+  background-color: $lightPurple;
+  max-height: 100vh;
+  height: 500px;
+  max-width: 100vw;
+}
+
+h1 {
+  font-size: $h1;
+  color: $offWhite;
+}

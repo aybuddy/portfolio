@@ -2,73 +2,8 @@
 import { gsap } from 'gsap';
 // gsap.registerPlugin(ScrollTrigger, CSSRulePlugin);
 
-const navbarLinks = document.querySelector('.navbar__link');
-
-const tl = gsap.timeline({
-  onReverseComplete: function () {
-    gsap.set('.navbar, .navbar__link', {
-      clearProps: 'all',
-    });
-  },
-  paused: true,
-});
-
-tl.to('.one', {
-  duration: 0.5,
-  y: 6,
-  rotation: 45,
-  ease: 'expo.inOut',
-});
-tl.to('.two', {
-  duration: 0.5,
-  y: -6,
-  rotation: -45,
-  ease: 'expo.inOut',
-  delay: -0.5,
-});
-tl.to('.logo', {
-  color: 'white',
-});
-tl.to('.navbar', {
-  duration: 1,
-  top: '0%',
-  ease: 'power1.inOut',
-  background: '#2e0343',
-  height: '100vh',
-  display: 'block',
-  // delay: 0.5,
-});
-// tl.fromTo(
-//   '.navbar__link',
-//   { x: -400, opacity: 0 },
-//   {
-//     duration: 0.8,
-//     stagger: 0.3,
-//     x: 0,
-//     opacity: 1,
-//     ease: 'power1.out',
-//   }
-// );
-tl.to('.navbar__link', {
-  duration: 0.8,
-  stagger: 0.3,
-  x: 0,
-  opacity: 1,
-  ease: 'power1.out',
-});
-tl.reverse();
-
 // const header = document.querySelector('header');
 // const navbarUL = document.querySelector('.navbar__links');
-
-// BUG Navbar does not hide after click
-
-const toggleBtn = document.querySelector('.toggle-btn');
-toggleBtn.addEventListener('click', function () {
-  // navbarUL.style.display = 'flex';
-  tl.reversed(!tl.reversed());
-});
-
 // const slider = document.querySelector('.background-slider');
 // const hero = document.querySelector('.hero');
 // const left = document.querySelector('.hero__left');

@@ -2,37 +2,27 @@
 
 @media (min-width: 280px) {
   header {
-    position: relative;
+    // position: relative;
+    background-color: #23082e;
   }
-  // .navBack {
-  //   background-color: $black;
-  //   height: 75px;
-  //   position: fixed;
-  //   z-index: 100;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  // }
   .logo {
     font-family: $serif;
     font-weight: 500;
     font-size: $h2;
     z-index: 600;
     position: absolute;
-    top: -15px;
-    left: 10px;
-    padding: 3vh 4vw;
+    top: 20px;
+    left: 25px;
     color: $offWhite;
     text-shadow: 5px 9px 9px rgba(204, 204, 204, 0.3);
     display: block;
   }
   .toggle-btn {
     position: absolute;
-    padding: 3vh 4vw;
+    top: 40px;
+    right: 25px;
     width: 40px;
     height: 12px;
-    top: 0;
-    right: 50px;
     z-index: 600;
     cursor: pointer;
     color: $offWhite;
@@ -90,13 +80,13 @@
 @media (min-width: 768px) {
   .logo {
     font-size: $h2;
-    padding: 5.55vh 4vw;
+    top: 20px;
+    left: 60px;
   }
 
   .toggle-btn {
-    padding: 3vh 4vw;
-    top: 50px;
-    right: 50px;
+    top: 35px;
+    right: 60px;
   }
 
   .navbar {
@@ -111,7 +101,12 @@
 @media (min-width: 1024px) {
   .logo {
     font-size: $h2;
-    padding: 5.55vh 4vw;
+    top: 50px;
+    left: 70px;
+  }
+  .toggle-btn {
+    top: 50px;
+    right: 70px;
   }
   .navbar {
     &__link {
