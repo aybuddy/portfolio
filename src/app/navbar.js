@@ -30,7 +30,7 @@ tl.to('.navbar', {
   duration: 1,
   top: '0%',
   ease: 'power1.inOut',
-  background: '#2e0343',
+  background: '#1a0a1d',
   height: '100vh',
   display: 'block',
 });

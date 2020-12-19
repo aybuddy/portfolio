@@ -83,43 +83,23 @@
   }
 }
 
-// @media (min-width: 768px) {
-//   .logo {
-//     font-size: $h2;
-//     top: 20px;
-//     left: 60px;
-//   }
+@media (min-width: 768px) {
+  .navbar {
+    padding: 20rem 0 0 0;
 
-//   .toggle-btn {
-//     top: 35px;
-//     right: 60px;
-//   }
+    &__links {
+      align-items: center;
+    }
+  }
+}
 
-//   .navbar {
-//     padding: 20rem 0 0 0;
-
-//     &__links {
-//       align-items: center;
-//     }
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .logo {
-//     font-size: $h2;
-//     top: 50px;
-//     left: 70px;
-//   }
-//   .toggle-btn {
-//     top: 50px;
-//     right: 70px;
-//   }
-//   .navbar {
-//     &__link {
-//       margin-bottom: 4rem;
-//     }
-//   }
-// }
+@media (min-width: 1024px) {
+  .navbar {
+    &__link {
+      margin-bottom: 4rem;
+    }
+  }
+}
 
 @media (min-width: 1440px) {
   .heading-container {
@@ -131,8 +111,6 @@
   }
 
   .toggle-btn {
-    width: 40px;
-    height: 12px;
     margin-right: 25px;
   }
 
@@ -144,6 +122,12 @@
     width: 55px;
     height: 5px;
     margin-top: 22px;
+  }
+  .navbar {
+    &__link {
+      font-size: $h1;
+      margin-bottom: 6rem;
+    }
   }
 }
 
@@ -151,24 +135,9 @@
   .heading-container {
     padding: 40px 105px;
   }
-
-  .logo {
-    font-size: $h1;
-  }
-
-  .toggle-btn {
-    width: 40px;
-    height: 12px;
-    margin-right: 25px;
-  }
-
-  span.one {
-    width: 55px;
-    height: 5px;
-  }
-  span.two {
-    width: 55px;
-    height: 5px;
-    margin-top: 22px;
+  .navbar {
+    &__link {
+      font-size: 8.8rem;
+    }
   }
 }
