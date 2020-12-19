@@ -1,6 +1,8 @@
 @import './variables';
 @import './typography';
 
+// TODO REFACTOR  Clean up duplicate codes for viewports
+
 @media (min-width: 280px) {
   .footer {
     background-color: $black;
