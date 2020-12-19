@@ -1,76 +1,78 @@
 @import './variables';
+@import './typography';
 
-@media (min-width: 320px) {
-  #footer1 {
-    background-color: $black;
-  }
-  #footer2 {
-    display: none;
-  }
+@media (min-width: 280px) {
   .footer {
+    background-color: $black;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    padding: 2vh 4vw;
     z-index: 100;
+    width: 100%;
 
     &__nav {
+      padding: 4px 20px;
       display: flex;
-      padding: 0 10px;
       justify-content: space-between;
     }
 
     &__links {
-      font-size: 4rem;
+      font-size: 5rem;
     }
   }
   a {
     color: $offWhite;
+    text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
   }
 }
 
 @media (min-width: 768px) {
   .footer {
-    padding: 5.55vh 4vw;
     &__links {
-      font-size: $h2;
+      font-size: 6rem;
     }
   }
 }
 
 @media (min-width: 1024px) {
-  #footer1 {
-    display: none;
-  }
   .footer {
-    &__links {
-      font-size: $h1;
-    }
+    display: none;
+    visibility: hidden;
   }
+  // .footer {
+  //   display: none;
+  // }
+  //   #footer1 {
+  //     display: none;
+  //   }
+  //   .footer {
+  //     &__links {
+  //       font-size: $h1;
+  //     }
+  //   }
 
-  #footer2 {
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    .footer {
-      width: 100%;
-      // padding: 3vh 4vw;
-      z-index: 100;
+  //   #footer2 {
+  //     display: block;
+  //     position: absolute;
+  //     right: 0;
+  //     bottom: 0;
+  //     .footer {
+  //       width: 100%;
+  //       // padding: 3vh 4vw;
+  //       z-index: 100;
 
-      &__nav {
-        display: flex;
-        padding: 0 10px;
-        justify-content: space-between;
-      }
+  //       &__nav {
+  //         display: flex;
+  //         padding: 0 10px;
+  //         justify-content: space-between;
+  //       }
 
-      &__links {
-        font-family: $sanSerif;
-        font-weight: 400;
-        font-size: $h4;
-        color: $offWhite;
-        text-shadow: 5px 9px 9px rgba(255, 255, 255, 0.3);
-      }
-    }
-  }
+  //       &__links {
+  //         font-family: $sanSerif;
+  //         font-weight: 400;
+  //         font-size: $h4;
+  //         color: $offWhite;
+  //         text-shadow: 5px 9px 9px rgba(255, 255, 255, 0.3);
+  //       }
+  //     }
+  //   }
 }

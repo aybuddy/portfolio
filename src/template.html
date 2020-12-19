@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aaron Yu Portfolio</title>
+    <title>REMIX</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -15,12 +15,14 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="#hero-section">AY</a>
-      </div>
-      <div class="toggle-btn">
-        <span class="one"></span>
-        <span class="two"></span>
+      <div class="heading-container">
+        <div class="logo">
+          <a href="#hero-section">AY</a>
+        </div>
+        <div class="toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+        </div>
       </div>
 
       <nav class="navbar">
@@ -40,42 +42,52 @@
 
     <!-- <div class="background-slider"></div> -->
 
-    <section id="hero-section" class="hero">
-      <div class="hero__left" id="glass">
-        <h1 class="hero__text--main">Aaron Yu</h1>
-      </div>
-      <div class="hero__container">
-        <h2 class="hero__text--second">
-          Front-End Developer from Philadelphia
-        </h2>
-      </div>
+    <section id="hero-section" class="section">
+      <div class="hero">
+        <div class="hero__containerTop">
+          <div class="hero__container--1" id="glass">
+            <h1 class="hero__text--main">Aaron Yu</h1>
+          </div>
+          <div class="hero__container--2">
+            <h2 class="hero__text--second">
+              Front-End Developer from Philadelphia
+            </h2>
+          </div>
 
-      <div class="mobile-only-list">
-        <ul>
-          <li>Clean Code.</li>
-          <li>Thoughtful Development.</li>
-          <li>Best Practices.</li>
-        </ul>
-      </div>
+          <div class="hero__social">
+            <ul class="hero__social--links">
+              <li class="hero__social--link">
+                <a href="" class="hero__social--anchor">LinkedIn</a>
+              </li>
+              <li class="hero__social--link">
+                <a href="" class="hero__social--anchor">GitHub</a>
+              </li>
+              <li class="hero__social--link">
+                <a href="" class="hero__social--anchor">Medium</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="hero__social">
-        <ul>
-          <li><a href="">LinkedIn</a></li>
-          <li><a href="">GitHub</a></li>
-          <li><a href="">Medium</a></li>
-        </ul>
+        <footer class="hero__adv">
+          <ul class="hero__adv--links">
+            <li class="hero__adv--link">Clean Code.</li>
+            <li class="hero__adv--link">Thoughtful Development.</li>
+            <li class="hero__adv--link">Best Practices.</li>
+          </ul>
+        </footer>
       </div>
-
-      <footer id="footer2" class="footer">
-        <ul class="footer__nav">
-          <li class="footer__links">Clean Code.</li>
-          <li class="footer__links">Thoughtful Development.</li>
-          <li class="footer__links">Best Practices.</li>
-        </ul>
-      </footer>
     </section>
 
-    <section id="project-section">
+    <!-- <div class="hero__mobile-only">
+            <ul>
+              <li>Clean Code.</li>
+              <li>Thoughtful Development.</li>
+              <li>Best Practices.</li>
+            </ul>
+          </div> -->
+
+    <section id="project-section" class="section">
       <h1 class="project-title">Projects</h1>
       <!-- Concordville -->
       <div class="project">
@@ -105,7 +117,7 @@
       </div>
 
       <!-- React -->
-      <div class="project">
+      <!-- <div class="project">
         <div class="project__left">
           <div class="glass_container">
             <h2 class="project__left--main">React<br />Colors</h2>
@@ -132,10 +144,10 @@
             >Github</a
           >
         </div>
-      </div>
+      </div> -->
 
       <!-- Portfolio -->
-      <div class="project">
+      <!-- <div class="project">
         <div class="project__left">
           <div class="glass_container">
             <h2 class="project__left--main">Portfolio <br />Website</h2>
@@ -161,10 +173,10 @@
             >Github</a
           >
         </div>
-      </div>
+      </div> -->
 
       <!-- Natours -->
-      <div class="project">
+      <!-- <div class="project">
         <div class="project__left">
           <div class="glass_container">
             <h2 class="project__left--main">Natours <br />App</h2>
@@ -191,18 +203,18 @@
             >Github</a
           >
         </div>
-      </div>
+      </div> -->
     </section>
 
-    <!-- <section id="about-section">
+    <section id="about-section" class="section">
       <h1>This is the about me Section</h1>
-    </section> -->
+    </section>
 
-    <!-- <section id="contact-section">
+    <section id="contact-section" class="section">
       <h1>This is where you can contact me</h1>
-    </section> -->
+    </section>
 
-    <footer id="footer1" class="footer">
+    <footer class="footer section">
       <ul class="footer__nav">
         <li class="footer__links">
           <a href="#"><i class="fab fa-linkedin"></i></a>
