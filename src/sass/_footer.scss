@@ -1,8 +1,6 @@
 @import './variables';
 @import './typography';
 
-// TODO REFACTOR  Clean up duplicate codes for viewports
-
 @media (min-width: 280px) {
   .footer {
     background-color: $black;
@@ -40,41 +38,4 @@
     display: none;
     visibility: hidden;
   }
-  // .footer {
-  //   display: none;
-  // }
-  //   #footer1 {
-  //     display: none;
-  //   }
-  //   .footer {
-  //     &__links {
-  //       font-size: $h1;
-  //     }
-  //   }
-
-  //   #footer2 {
-  //     display: block;
-  //     position: absolute;
-  //     right: 0;
-  //     bottom: 0;
-  //     .footer {
-  //       width: 100%;
-  //       // padding: 3vh 4vw;
-  //       z-index: 100;
-
-  //       &__nav {
-  //         display: flex;
-  //         padding: 0 10px;
-  //         justify-content: space-between;
-  //       }
-
-  //       &__links {
-  //         font-family: $sanSerif;
-  //         font-weight: 400;
-  //         font-size: $h4;
-  //         color: $offWhite;
-  //         text-shadow: 5px 9px 9px rgba(255, 255, 255, 0.3);
-  //       }
-  //     }
-  //   }
 }
