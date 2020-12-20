@@ -1,8 +1,6 @@
 @import './variables';
 @import './typography';
 
-// TODO REFACTOR  Clean up duplicate codes for viewports
-
 @media (min-width: 280px) {
   #hero-section {
     background-color: $black;
@@ -23,31 +21,20 @@
       left: 2%;
       z-index: 1;
     }
-
-    &__text--main {
-      color: $offWhite;
-      font-family: $serif;
-      font-size: 88px;
-      font-weight: 500;
-      text-align: center;
-      text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
-      width: 90%;
-      margin: 0 auto;
-    }
-
     &__container--2 {
+      display: flex;
+      align-items: center;
       position: relative;
-      top: 15px;
       overflow: hidden;
       background: url('../assets/images/encourline-DSYQJOH0GbU-unsplash.jpg')
         no-repeat;
       background-size: cover;
       background-position: center;
       box-shadow: 15px 8px 18px -4px rgba(112, 112, 112, 0.151);
-      display: flex;
-      align-items: center;
-      margin: 0 10px;
+
       height: 75vh;
+      top: 15px;
+      margin: 0 10px;
 
       &::before {
         content: '';
@@ -60,7 +47,16 @@
         top: 0;
       }
     }
-
+    &__text--main {
+      color: $offWhite;
+      font-family: $serif;
+      font-size: 88px;
+      font-weight: 500;
+      text-align: center;
+      text-shadow: 5px 9px 9px rgba(119, 119, 119, 0.3);
+      width: 90%;
+      margin: 0 auto;
+    }
     &__text--second {
       color: $offWhite;
       font-family: $serif;
@@ -89,9 +85,10 @@
 
     &__adv {
       font-family: $sanSerif;
-      z-index: 10;
       position: relative;
-      bottom: 135px;
+      // bottom: 135px;
+      bottom: 17%;
+      z-index: 10;
       width: 90%;
       margin: 0 auto;
 
@@ -109,9 +106,6 @@
 }
 
 @media (min-width: 500px) {
-  #hero-section {
-    max-height: calc(100vh - 68px);
-  }
   .hero {
     &__container--1 {
       left: 15%;
@@ -127,7 +121,8 @@
       font-size: $h2;
     }
     &__adv {
-      bottom: 120px;
+      // bottom: 120px;
+      bottom: 17%;
     }
   }
 }
@@ -137,7 +132,8 @@
     max-height: calc(100vh - 78px);
   }
   .hero {
-    height: 88vh;
+    // height: 88vh;
+    height: 76vh;
     &__containerTop {
       display: flex;
       flex-direction: row;
@@ -170,11 +166,8 @@
     &__text--second {
       padding: 0px 10%;
     }
-    &__social {
-      display: none;
-    }
     &__adv {
-      bottom: 200px;
+      bottom: 27%;
     }
   }
 }
@@ -185,11 +178,9 @@
     &__containerTop {
       margin: 30px 0 30px 0;
     }
-
     &__container--1 {
       top: 20%;
       left: 5%;
-      padding: 20px 50px;
     }
     &__container--2 {
       padding: 290px 0 50px 0;
@@ -213,10 +204,8 @@
       }
       &--link {
         margin-right: 50px;
-        color: $offWhite;
       }
       &--anchor {
-        font-family: $sanSerif;
         font-size: $h4;
       }
     }
@@ -244,56 +233,24 @@
   }
   .hero {
     height: 100vh;
-    &__containerTop {
-      margin: 30px 0 30px 0;
-      position: relative;
-    }
-
-    &__container--1 {
-      top: 20%;
-      left: 5%;
-      padding: 20px 50px;
-    }
     &__container--2 {
       padding: 300px 0 0 0;
-      margin: 0px 8% 0 32%;
       height: 60vh;
     }
     &__text--main {
       font-size: 170px;
     }
-    &__text--second {
-      padding: 0 5%;
-    }
     &__social {
-      display: block;
-      transform: rotate(-90deg);
-      position: absolute;
       top: 40%;
       right: -180px;
 
-      &--links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      &--link {
-        margin-right: 50px;
-        color: $offWhite;
-      }
       &--anchor {
-        font-family: $sanSerif;
         font-size: $h3;
       }
     }
     &__adv {
       padding: 0 6%;
-      &--links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
+
       &--link {
         font-size: $h3;
       }
@@ -302,25 +259,10 @@
 }
 
 @media (min-width: 1920px) {
-  #hero-section {
-    height: calc(100vh - 144px);
-  }
   .hero {
     height: 100vh;
-    &__containerTop {
-      margin: 30px 0 30px 0;
-      position: relative;
-    }
-
-    &__container--1 {
-      top: 20%;
-      left: 5%;
-      padding: 20px 50px;
-    }
     &__container--2 {
-      padding: 300px 0 0 0;
       margin: 0 0 0 28%;
-      height: 60vh;
     }
     &__text--main {
       font-size: 190px;
@@ -329,95 +271,11 @@
       padding: 0 12%;
       font-size: $h1;
     }
-    &__social {
-      display: block;
-      transform: rotate(-90deg);
-      position: absolute;
-      top: 40%;
-      right: -180px;
-
-      &--links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      &--link {
-        margin-right: 50px;
-        color: $offWhite;
-      }
-      &--anchor {
-        font-size: $h3;
-      }
-    }
-    &__adv {
-      &--links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
-      &--link {
-        font-size: $h3;
-      }
-    }
   }
 }
 
 @media (min-width: 2560px) {
-  #hero-section {
-    height: calc(100vh - 78px);
-  }
   .hero {
     height: 100vh;
-    &__containerTop {
-      margin: 30px 0 30px 0;
-      position: relative;
-    }
-
-    &__container--1 {
-      top: 20%;
-      left: 5%;
-      padding: 20px 50px;
-    }
-    &__container--2 {
-      padding: 300px 0 0 0;
-      margin: 0px 8% 0 32%;
-      height: 60vh;
-    }
-    &__text--main {
-      font-size: 170px;
-    }
-    &__text--second {
-      padding: 0 5%;
-    }
-    &__social {
-      display: block;
-      transform: rotate(-90deg);
-      position: absolute;
-      top: 40%;
-      right: -180px;
-
-      &--links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      &--link {
-        margin-right: 50px;
-        color: $offWhite;
-      }
-      &--anchor {
-        font-family: $sanSerif;
-        font-size: $h3;
-      }
-    }
-    &__adv {
-      &--links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
-    }
   }
 }
