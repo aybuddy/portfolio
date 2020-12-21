@@ -2,10 +2,51 @@
 @import './typography';
 
 #about-section {
-  background-color: $lightPurple;
+  background-color: $black;
+  max-height: 100vh;
 }
 
-h1 {
-  font-size: $h1;
-  color: $offWhite;
+@media (min-width: 280px) {
+  .about {
+    &__container {
+      font-family: $sanSerif;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      padding: 5% 10%;
+      height: 50vh;
+    }
+
+    &__text {
+      color: $offWhite;
+      font-size: $h6;
+      line-height: 150%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    &__text {
+      font-size: $h4;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .about {
+    &__text {
+      font-size: $h3;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .about {
+    &__text {
+      font-size: $h3;
+    }
+  }
+}
+@media (min-width: 1920px) {
+}
+@media (min-width: 2560px) {
 }
