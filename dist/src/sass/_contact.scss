@@ -1,0 +1,52 @@
+@import './variables';
+@import './typography';
+
+@media (min-width: 280px) {
+  #contact-section {
+    background-color: $black;
+    height: 70vh;
+  }
+
+  .contact-title {
+    color: $offWhite;
+    font-size: $h2;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      border-bottom: 2px solid $offWhite;
+      height: 12px;
+      width: 150px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .contact {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      font-family: $serif;
+      font-weight: 400;
+      color: $offWhite;
+      font-size: $h4;
+      text-align: center;
+      // padding-bottom: 200px;
+
+      & i {
+        display: block;
+        font-size: 5rem;
+        padding: 50px 0;
+      }
+    }
+
+    &__email:nth-of-type(1) {
+      padding-bottom: 25px;
+    }
+  }
+}

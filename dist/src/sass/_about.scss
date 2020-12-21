@@ -1,0 +1,73 @@
+@import './variables';
+@import './typography';
+
+#about-section {
+  background-color: $black;
+  max-height: 100vh;
+  padding: 50px 0;
+}
+
+@media (min-width: 280px) {
+  .about-title {
+    color: $offWhite;
+    font-size: $h2;
+    text-align: center;
+    // width: 150px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      border-bottom: 2px solid $offWhite;
+      height: 12px;
+      width: 150px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .about {
+    &__container {
+      font-family: $sanSerif;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      padding: 5% 10%;
+      height: 50vh;
+    }
+
+    &__text {
+      color: $offWhite;
+      font-size: $h6;
+      line-height: 150%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    &__text {
+      font-size: $h4;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .about {
+    &__text {
+      font-size: $h3;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .about {
+    &__text {
+      font-size: $h3;
+    }
+  }
+}
+@media (min-width: 1920px) {
+}
+@media (min-width: 2560px) {
+}
