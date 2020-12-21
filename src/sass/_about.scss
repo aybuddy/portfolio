@@ -12,10 +12,21 @@
     color: $offWhite;
     font-size: $h2;
     text-align: center;
-    border-bottom: 2px solid $offWhite;
-    width: 80%;
-    margin: 0 auto 25px auto;
-    padding-bottom: 15px;
+    // width: 150px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      border-bottom: 2px solid $offWhite;
+      height: 12px;
+      width: 150px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   .about {
     &__container {

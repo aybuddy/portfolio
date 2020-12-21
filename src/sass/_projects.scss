@@ -465,6 +465,12 @@
       margin-right: 18%;
     }
   }
+  #client-btn {
+    margin-right: 25%;
+  }
+  #right-container {
+    margin: 75px 147px 0 0;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -487,6 +493,9 @@
     &--second {
       margin-right: 22%;
     }
+  }
+  #client-btn {
+    margin-right: 30%;
   }
 }
 
