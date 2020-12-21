@@ -1,6 +1,6 @@
 @import './variables';
 
-@media (min-width: 280px) {
+@media only screen and (min-width: 280px) {
   #project-section {
     background-color: $black;
   }
@@ -265,7 +265,7 @@
   }
 }
 
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) {
   #project1BG {
     width: 65%;
     height: 100%;
@@ -321,7 +321,7 @@
     }
   }
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   #project1BG {
     width: 65%;
     height: 250px;
@@ -399,7 +399,7 @@
     display: none;
   }
 }
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   #project1BG {
     width: 50%;
     height: 400px;
@@ -473,7 +473,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .project {
     &__left {
       .glass_container {
@@ -499,7 +499,7 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
   .project-title {
     font-size: 88px;
     padding: 4rem 0;
@@ -577,7 +577,7 @@
   }
 }
 
-@media (min-width: 2560px) {
+@media only screen and (min-width: 2560px) {
   .project-title {
     font-size: 150px;
     padding: 8rem 0;

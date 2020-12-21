@@ -41,43 +41,47 @@ const responsiveAnimationDesk = () => ({
     .fromTo(
       mainText,
       { x: '-100%', opacity: 0 },
-      { x: 0, duration: 1, opacity: 1 },
+      { x: 0, duration: 0.5, opacity: 1 },
       '-=2'
     )
     .fromTo(
       mainTextContainer,
       { x: '-100%', opacity: 0 },
-      { x: 0, duration: 1, opacity: 1 },
+      { x: 0, duration: 0.5, opacity: 1 },
       '-=2'
     )
     .fromTo(
       secondText,
       { x: '100%', opacity: 0 },
-      { x: 0, duration: 1, opacity: 1 },
+      { x: 0, duration: 0.5, opacity: 1 },
       '-=1'
     )
     .fromTo(
       heroAdv,
       { y: '100%', opacity: 0 },
-      { y: 0, duration: 2, opacity: 1, stagger: '0.3' }
+      { y: 0, duration: 0.5, opacity: 1, stagger: '0.3' }
     )
     .fromTo(
       socialLinks,
       { y: '100%', opacity: 0 },
-      { y: 0, duration: 1, opacity: 1, stagger: '0.3' },
+      { y: 0, duration: 0.5, opacity: 1, stagger: '0.3' },
       '-=1'
     )
     .fromTo(
       toggleButtons,
       { x: '100%', opacity: 0 },
-      { x: 0, duration: 1, opacity: 1 },
+      { x: 0, duration: 0.5, opacity: 1 },
       '-=1'
     )
-    .fromTo(logo, { x: '-100%', opacity: 0 }, { x: 0, duration: 1, opacity: 1 })
+    .fromTo(
+      logo,
+      { x: '-100%', opacity: 0 },
+      { x: 0, duration: 0.5, opacity: 1 }
+    )
     .fromTo(
       footerLinks,
       { y: '-100%', opacity: 0 },
-      { y: 0, duration: 1, opacity: 1, stagger: '0.3' }
+      { y: 0, duration: 0.5, opacity: 1, stagger: '0.3' }
     ),
 });
 

@@ -1,7 +1,7 @@
 @import './variables';
 @import './typography';
 
-@media (min-width: 280px) {
+@media only screen and (min-width: 280px) {
   #contact-section {
     background-color: $black;
     height: 80vh;

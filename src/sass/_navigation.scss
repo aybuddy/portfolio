@@ -1,6 +1,6 @@
 @import './variables';
 
-@media (min-width: 280px) {
+@media only screen and (min-width: 280px) {
   header {
     background-color: $black;
     z-index: 10;
@@ -77,13 +77,13 @@
   }
 }
 
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) {
   .heading-container {
     padding: 15px 30px;
   }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .navbar {
     padding: 20rem 0 0 0;
 
@@ -93,7 +93,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .navbar {
     &__link {
       margin-bottom: 4rem;
@@ -101,7 +101,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .heading-container {
     padding: 40px 90px;
   }
@@ -131,7 +131,7 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
   .heading-container {
     padding: 40px 105px;
   }

@@ -1,7 +1,7 @@
 @import './variables';
 @import './typography';
 
-@media (min-width: 280px) {
+@media only screen and (min-width: 280px) {
   #hero-section {
     background-color: $black;
     max-height: calc(100vh - 68px);
@@ -106,7 +106,7 @@
   }
 }
 
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) {
   .hero {
     &__container--1 {
       left: 15%;
@@ -128,7 +128,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   #hero-section {
     max-height: calc(100vh - 78px);
   }
@@ -173,7 +173,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .hero {
     height: 100vh;
     &__containerTop {
@@ -228,7 +228,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   #hero-section {
     height: calc(100vh - 144px);
   }
@@ -259,7 +259,7 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
   .hero {
     height: 100vh;
     &__container--2 {
@@ -275,7 +275,7 @@
   }
 }
 
-@media (min-width: 2560px) {
+@media only screen and (min-width: 2560px) {
   .hero {
     height: 100vh;
   }

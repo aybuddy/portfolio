@@ -7,7 +7,7 @@
   padding: 50px 0;
 }
 
-@media (min-width: 280px) {
+@media only screen and (min-width: 280px) {
   .about-title {
     color: $offWhite;
     font-size: $h2;
@@ -46,21 +46,21 @@
   }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .about {
     &__text {
       font-size: $h4;
     }
   }
 }
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .about {
     &__text {
       font-size: $h3;
     }
   }
 }
-@media (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .about {
     &__text {
       font-size: $h3;
