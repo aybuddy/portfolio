@@ -4,9 +4,19 @@
 #about-section {
   background-color: $black;
   max-height: 100vh;
+  padding: 50px 0;
 }
 
 @media (min-width: 280px) {
+  .about-title {
+    color: $offWhite;
+    font-size: $h2;
+    text-align: center;
+    border-bottom: 2px solid $offWhite;
+    width: 80%;
+    margin: 0 auto 25px auto;
+    padding-bottom: 15px;
+  }
   .about {
     &__container {
       font-family: $sanSerif;
