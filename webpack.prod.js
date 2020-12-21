@@ -9,48 +9,44 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // merge common.js file with code inside module.exports
 module.exports = merge(common, {
-	mode: 'production',
-	output: {
-		filename: '[name].[contentHash].bundle.js',
-		path: path.resolve(__dirname, 'dist')
-	},
-	optimization: {
-		minimizer: [
-			new OptimizeCssAssetsPlugin(),
-			new TerserPlugin(),
-			new HtmlWebpackPlugin({
-				template: './src/template.html',
-				minify: {
-					removeAttributeQuotes: true,
-					collapseWhitespace: true,
-					removeComments: true
-				}
-			})
-		]
-	},
-	plugins: [
-		new MiniCssExtractPlugin({
-			filename: '[name].[contentHash].css'
-		}),
-		new CleanWebpackPlugin()
-	],
-	module: {
-		rules: [
-			{
-				test: /\.scss$/,
-				use: [
-					MiniCssExtractPlugin.loader,
-					'css-loader',
-					'sass-loader'
-				]
-			},
-			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				use: {
-					loader: 'babel-loader'
-				}
-			}
-		]
-	}
+  mode: 'production',
+  output: {
+    filename: '[name].[contentHash].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+  optimization: {
+    minimizer: [
+      new OptimizeCssAssetsPlugin(),
+      new TerserPlugin(),
+      new HtmlWebpackPlugin({
+        template: './src/template.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true,
+        },
+      }),
+    ],
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].[contentHash].css',
+    }),
+    new CleanWebpackPlugin(),
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+    ],
+  },
 });
