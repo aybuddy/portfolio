@@ -4,7 +4,7 @@
 @media (min-width: 280px) {
   #contact-section {
     background-color: $black;
-    height: 70vh;
+    height: 80vh;
   }
 
   .contact-title {
@@ -36,7 +36,6 @@
       color: $offWhite;
       font-size: $h4;
       text-align: center;
-      padding-bottom: 200px;
 
       & i {
         display: block;
