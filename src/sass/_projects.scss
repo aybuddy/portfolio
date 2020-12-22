@@ -157,9 +157,20 @@
     font-family: $serif;
     padding: 0 0 2rem 0;
     text-align: center;
-    border-bottom: 2px solid $offWhite;
     width: 250px;
     margin: 0 auto;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      border-bottom: 2px solid $offWhite;
+      height: 12px;
+      width: 150px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding-top: 5rem;
+    }
   }
 
   .project {
@@ -471,6 +482,9 @@
   #right-container {
     margin: 75px 147px 0 0;
   }
+  .project-title {
+    font-size: $h1;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -497,13 +511,22 @@
   #client-btn {
     margin-right: 30%;
   }
+  .project-title {
+    font-size: 88px;
+    width: 100%;
+    &::after {
+      width: 300px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 @media only screen and (min-width: 1920px) {
   .project-title {
     font-size: 88px;
     padding: 4rem 0;
-    width: 20%;
+    width: 100%;
   }
   #project1BG {
     height: 500px;

@@ -1,6 +1,5 @@
 'use strict';
 import { gsap } from 'gsap';
-// gsap.registerPlugin(ScrollTrigger, CSSRulePlugin);
 
 const logo = document.querySelector('.logo');
 const toggleButtons = document.querySelector('.toggle-btn');
