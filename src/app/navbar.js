@@ -2,7 +2,7 @@
 import { gsap } from 'gsap';
 
 const toggleBtn = document.querySelector('.toggle-btn');
-const navLink = document.querySelector('.navbar__link');
+const navLinks = document.querySelectorAll('.navbar__link');
 
 const tl = gsap.timeline({
   onReverseComplete: function () {
@@ -56,6 +56,8 @@ const tl1 = gsap.timeline({
   paused: true,
 });
 
-navLink.addEventListener('click', function () {
-  tl.reversed(!tl.reversed());
+navLinks.forEach(link => {
+  link.addEventListener('click', function () {
+    tl.reversed(!tl.reversed());
+  });
 });
